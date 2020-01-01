@@ -6,7 +6,8 @@
   "scripts": {
     "test": "test",
     "check": "npx eslint ./src/**/*.js",
-    "build": "npx webpack --config webpack.config.js"
+    "build": "npx webpack --config webpack.prod.config.js",
+    "dev": "npx webpack-dev-server --config webpack.dev.config.js"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +21,8 @@
     "sass-loader": "^8.0.0",
     "style-loader": "^1.1.2",
     "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-merge": "^4.2.2"
   }
 }

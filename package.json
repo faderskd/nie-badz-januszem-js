@@ -7,7 +7,7 @@
     "test": "test",
     "check": "npx eslint ./src/**/*.js",
     "build": "npx webpack --config webpack.prod.config.js",
-    "dev": "npx webpack-dev-server --config webpack.dev.config.js"
+    "dev": "npx webpack-dev-server --config webpack.dev.config.js --open"
   },
   "author": "",
   "license": "ISC",

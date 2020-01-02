@@ -6,6 +6,9 @@ const common = require('./webpack.common.config');
 module.exports = merge(common, {
   mode: 'development',
   devtool: 'none',
+  output: {
+    filename: '[name].bundle.js',
+  },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,

@@ -11,6 +11,11 @@ module.exports = merge(common, {
   mode: 'production',
   optimization: {
     minimizer: [new OptimizeCSSAssetsPlugin(), new TerserPlugin()],
+    minimize: true,
+    splitChunks: {
+      chunks: 'all',
+    },
+    runtimeChunk: 'single',
   },
   module: {
     rules: [
@@ -19,7 +24,15 @@ module.exports = merge(common, {
         use: [
           MiniCssExtractPlugin.loader, // add css to it's own file
           'css-loader', // convert css into js
-          'sass-loader', // convert saas into css
+          {
+            loader: 'sass-loader',
+            options: {
+              sassOptions: {
+                minimize: false,
+                outputStyle: 'expanded',
+              },
+            },
+          },
         ],
       },
     ],

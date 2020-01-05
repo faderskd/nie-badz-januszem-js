@@ -1,1 +1,1 @@
-alert('vendor !!');
+import 'bootstrap';

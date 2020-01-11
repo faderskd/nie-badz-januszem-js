@@ -62,3 +62,22 @@ as main page
 9. Add `terser-webpack-plugin` as js optimizer
 
 ## Testing
+1. `npm install mocha mocha-webpack webpack-node-externals`
+2. add configuration test file
+3. add npm `test-mocha` task to test files ending with `.spec.js` ext using `mocha-webpack`
+4. `npm install glob jest`
+5. add configuration for `jest`
+    ```js
+        module.exports = {
+          'moduleNameMapper': {
+            // eslint-disable-next-line max-len
+            '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': 'tests/mocks/fileMock.js',
+            '\\.scss$': 'tests/mocks/styleMock.js',
+          },
+          'moduleFileExtensions': ['js'],
+          'testMatch': ['**/*.js'],
+          'rootDir': 'tests/bundled',
+        };
+    ```
+6. add npm `test-jest` task to test files ending with `.spec.js` ext using pure `jest`
+7. add example tests

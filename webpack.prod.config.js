@@ -9,6 +9,7 @@ const common = require('./webpack.common.config');
 
 module.exports = merge(common, {
   mode: 'production',
+  devtool: 'source-map',
   optimization: {
     minimizer: [new OptimizeCSSAssetsPlugin(), new TerserPlugin()],
     minimize: true,

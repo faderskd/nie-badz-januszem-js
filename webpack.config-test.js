@@ -11,6 +11,7 @@ module.exports = {
   mode: 'none',
   target: 'node', // webpack should compile node compatible code
   externals: [nodeExternals()], // ignore all modules in node_modules folder,
+  devtool: 'inline-cheap-module-source-map',
   module: {
     rules: [
       {
@@ -45,6 +46,8 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'tests/bundled'),
+    devtoolModuleFilenameTemplate: '[absolute-resource-path]',
+    devtoolFallbackModuleFilenameTemplate: '[absolute-resource-path]?[hash]',
   },
   plugins: [new MiniCssExtractPlugin(
       {

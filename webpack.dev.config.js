@@ -5,7 +5,7 @@ const common = require('./webpack.common.config');
 
 module.exports = merge(common, {
   mode: 'development',
-  devtool: 'none',
+  devtool: 'inline-module-source-map',
   output: {
     filename: '[name].bundle.js',
   },
@@ -23,7 +23,6 @@ module.exports = merge(common, {
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
-    compress: true,
     port: 9000,
   },
 });

@@ -81,3 +81,9 @@ as main page
     ```
 6. add npm `test-jest` task to test files ending with `.spec.js` ext using pure `jest`
 7. add example tests
+
+## Debugging
+1. enable `source mapping` for `dev` mode
+2. throw Error in `index.js` file and see stack trace
+3. enable `source mapping` for `webpack-mocha` to be able [debug in IDE](http://zinserjan.github.io/mocha-webpack/docs/guides/ide-integration.html#using-mocha-webpack-in-ides) 
+

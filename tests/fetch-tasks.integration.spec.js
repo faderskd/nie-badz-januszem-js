@@ -2,9 +2,6 @@ import fetchTasksToDo from '../src/fetch-tasks-todo';
 
 const mockServer = require('mockttp').getLocal();
 const chai = require('chai');
-const chaiFetch = require('chai-fetch');
-chai.use(chaiFetch);
-
 
 const {expect} = chai;
 

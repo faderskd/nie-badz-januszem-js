@@ -6,5 +6,5 @@ module.exports = {
   },
   'moduleFileExtensions': ['js'],
   'testMatch': ['**/*.js'],
-  'rootDir': 'tests/bundled',
+  'rootDir': 'dist_tests',
 };

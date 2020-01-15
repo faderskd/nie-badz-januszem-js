@@ -63,7 +63,7 @@ as main page
 
 ## Testing
 1. `npm install mocha mocha-webpack webpack-node-externals`
-2. add configuration test file
+2. add test configuration file
 3. add npm `test-mocha` task to test files ending with `.spec.js` ext using `mocha-webpack`
 4. `npm install glob jest`
 5. add configuration for `jest`

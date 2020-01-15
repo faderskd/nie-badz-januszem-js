@@ -87,3 +87,12 @@ as main page
 2. throw Error in `index.js` file and see stack trace
 3. enable `source mapping` for `webpack-mocha` to be able [debug in IDE](http://zinserjan.github.io/mocha-webpack/docs/guides/ide-integration.html#using-mocha-webpack-in-ides) 
 
+## Async
+1. `npm install sinon --save-dev`
+2. `npm install node-fetch`
+3. Write async function making http request using `await` and `node-fetch`
+4. Write test for previous async function using `sinon` to stub `node-fetch` library
+5. Write test for async function using 
+
+## Babel
+

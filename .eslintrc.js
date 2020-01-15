@@ -1,7 +1,7 @@
 module.exports = {
   'env': {
     'browser': true,
-    'es6': true,
+    'es2017': true,
   },
   'extends': [
     'plugin:vue/essential',
@@ -12,12 +12,13 @@ module.exports = {
     'SharedArrayBuffer': 'readonly',
   },
   'parserOptions': {
-    'ecmaVersion': 2018,
+    'ecmaVersion': 2017,
     'sourceType': 'module',
   },
   'plugins': [
     'vue',
   ],
   'rules': {
+    "require-jsdoc": ["off", {}]
   },
 };

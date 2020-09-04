@@ -27,7 +27,7 @@
     "mocha": "^7.0.0",
     "mocha-webpack": "^2.0.0-beta.0",
     "mockttp": "^0.19.2",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "sass-loader": "^8.0.0",
     "sinon": "^8.0.4",

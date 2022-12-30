@@ -24,7 +24,7 @@
     "html-webpack-plugin": "^3.2.0",
     "jest": "^24.9.0",
     "mini-css-extract-plugin": "^0.9.0",
-    "mocha": "^7.0.0",
+    "mocha": "^10.2.0",
     "mocha-webpack": "^2.0.0-beta.0",
     "mockttp": "^0.19.2",
     "node-sass": "^4.13.0",
